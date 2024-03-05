@@ -179,17 +179,17 @@ plt.xticks(rotation=45)
 st.pyplot(plt)
 
 # Memuat data kategori produk yang telah diterjemahkan
-product_category_translation_df = pd.read_csv("C:/Users/Umaru/Documents/ya/data/product_category_name_translation.csv")
+# product_category_translation_df = pd.read_csv("C:/Users/Umaru/Documents/ya/data/product_category_name_translation.csv")
 
-# Menampilkan grafik untuk distribusi kategori berdasarkan terjemahan
-st.markdown("")
-st.subheader('Distribusi Kategori Berdasarkan Translasi')
-plt.figure(figsize=(10, 6))
-sns.countplot(data=product_category_translation_df, y='product_category_name', order=product_category_translation_df['product_category_name'].value_counts().index)
-plt.title('Distribution of Categories by Translation')
-plt.xlabel('Number of Categories')
-plt.ylabel('Category')
-st.pyplot(plt)
+# # Menampilkan grafik untuk distribusi kategori berdasarkan terjemahan
+# st.markdown("")
+# st.subheader('Distribusi Kategori Berdasarkan Translasi')
+# plt.figure(figsize=(10, 6))
+# sns.countplot(data=product_category_translation_df, y='product_category_name', order=product_category_translation_df['product_category_name'].value_counts().index)
+# plt.title('Distribution of Categories by Translation')
+# plt.xlabel('Number of Categories')
+# plt.ylabel('Category')
+# st.pyplot(plt)
 
 st.markdown("")
 st.markdown("Copyright (c) - Created by Umaru90 - 2024")
